@@ -1,0 +1,172 @@
+body{
+    background-color: #FAFDD6;
+}
+h1{
+    color: #E6BA95;
+    text-align: center;
+    font-family: 'Calligraffitti', cursive;
+    font-size: 50px;
+}
+/* diseño del menu de inicio */
+nav{
+    background-color: #E6BA95;
+}
+#menu{
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#menu .elementos_menu a{
+    font-size: 20px;
+    font-family: 'Arvo', serif;
+    color: #5F7464;
+    text-decoration: none;
+}
+/* responsive menu */
+@media screen and (max-width:320px){
+    #menu{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* diseño footer */
+footer{
+    background-color: #E0DDAA;
+}
+.logo_footer{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+.texto_footer{
+    text-align: center;
+    color: #5F7464;
+}
+/* diseño index*/
+#index_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#index_grid .image_index_grid{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#index_grid .image_index_grid .image_index{
+    width: 250px;
+    height: 250px;
+}
+.texto_inicio{
+    color:#5F7464;
+    text-align: center;
+    font-family: 'Arvo', serif;
+    font-size: 18px;
+    padding: 20px;
+}
+/* responsive index */
+ @media screen and (max-width:320px){
+    #index_grid{
+        display: flex;
+        flex-direction: column;
+    }
+ }
+/* diseño servicios */
+#servicios_grid{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   margin-left: 10%;
+   margin-right: 10%;
+}
+#servicios_grid .servicios{
+    text-align: center;
+    font-family: 'Arvo', serif;
+    color: #02475E;
+    border: 5px double #A2B38B;
+    border-radius: 15%;
+    margin: 5% 25% 5% 25%;
+}
+#servicios_grid .servicios .img_servicios{
+    width: 100px;
+    height: 100px;
+}
+/* responsive servicios */
+@media screen and (max-width:320px){
+    #servicios_grid{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* diseño galeria */
+#galery_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+#galery_grid .image_galery_grid{
+    text-align: center;
+}
+#galery_grid .image_galery_grid .image_galery{
+    width: 450px;
+    height: 250px;
+    margin: 50px;
+    border: 1px solid #5F7464;
+}
+/* responsive galeria */
+@media screen and (max-width:320px){
+    #galery_grid{
+        display: flex;
+        flex-direction: column;
+    }
+    #galery_grid .image_galery_grid .image_galery{
+        width: 75%;
+        height: 75%;
+    }
+}
+/* diseño sobre nosotros */
+#about_us_grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* responsive sobre nosotros */
+@media screen and (max-width:320px){
+    #about_us_grid{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* diseño formulario de contacto */
+#formulario{
+    font-family: 'Arvo', serif;
+    color: #02475E;
+    padding: 10px;
+    width: 33%;
+    margin-left: 33%;
+}
+#formulario .elementos_formulario{
+    padding: 10px;
+}
+.input_form{
+    display: inline-block;
+    text-align: right;
+}
+/* responsive formulario de contacto */
+@media screen and (max-width:320px){
+    #formulario{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+    }
+    #formulario .elementos_formulario .text_area{
+        width: 250px;
+        height: 200px;
+    }
+    }
