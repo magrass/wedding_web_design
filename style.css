@@ -58,6 +58,7 @@ footer{
 #index_grid .image_index_grid{
     text-align: center;
     margin-bottom: 30px;
+    transition: all 1s;
 }
 #index_grid .image_index_grid .image_index{
     width: 250px;
@@ -69,6 +70,9 @@ footer{
     font-family: 'Arvo', serif;
     font-size: 18px;
     padding: 20px;
+}
+.image_index_grid:hover{
+    transform: scale(1.1);
 }
 /* responsive index */
  @media screen and (max-width:320px){
@@ -92,10 +96,15 @@ footer{
     border: 5px double #A2B38B;
     border-radius: 15%;
     margin: 5% 25% 5% 25%;
+    transition: all 1s;
 }
 #servicios_grid .servicios .img_servicios{
     width: 100px;
     height: 100px;
+}
+.servicios:hover{
+    transform: scale(1.1);
+    background-color: #E6BA95;
 }
 /* responsive servicios */
 @media screen and (max-width:320px){
@@ -112,12 +121,16 @@ footer{
 }
 #galery_grid .image_galery_grid{
     text-align: center;
+    transition: all 1s;
 }
 #galery_grid .image_galery_grid .image_galery{
     width: 450px;
     height: 250px;
     margin: 50px;
     border: 1px solid #5F7464;
+}
+.image_galery_grid:hover{
+    transform: scale(1.1);
 }
 /* responsive galeria */
 @media screen and (max-width:320px){
@@ -135,6 +148,17 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.about_us_text{
+    animation-name: un_efecto;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+}
+@keyframes un_efecto {
+    0%   {background-color: #FAFDD6;}
+    50%  {background-color: #E6BA95;}
+    100% {background-color: #FAFDD6;}
 }
 /* responsive sobre nosotros */
 @media screen and (max-width:320px){
