@@ -6,63 +6,47 @@ h1{
     text-align: center;
     font-family: 'Calligraffitti', cursive;
     font-size: 50px;
+    padding-top: 30px;
 }
 /* diseño del menu de inicio */
 nav{
     background-color: #E6BA95;
 }
-#menu{
-    list-style-type: none;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-#menu .elementos_menu a{
+.nav-item a{
     font-size: 20px;
     font-family: 'Arvo', serif;
     color: #5F7464;
     text-decoration: none;
-}
-/* responsive menu */
-@media screen and (max-width:320px){
-    #menu{
-        display: flex;
-        flex-direction: column;
-    }
 }
 /* diseño footer */
 footer{
     background-color: #E0DDAA;
 }
 .logo_footer{
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 10px;
 }
 .texto_footer{
     text-align: center;
     color: #5F7464;
 }
-/* diseño index*/
-#index_grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 10%;
-    margin-right: 10%;
+.nav-item-footer{
+    font-size: 12px;
+    font-family: 'Arvo', serif;
+    color: #5F7464;
+    text-decoration: none;
+    display: inline;
 }
-#index_grid .image_index_grid{
+/* diseño index*/
+.image_index{
+    width: 250px;
+    height: 250px;
     text-align: center;
     margin-bottom: 30px;
     transition: all 1s;
-}
-#index_grid .image_index_grid .image_index{
-    width: 250px;
-    height: 250px;
 }
 .texto_inicio{
     color:#5F7464;
@@ -71,34 +55,22 @@ footer{
     font-size: 18px;
     padding: 20px;
 }
-.image_index_grid:hover{
+.image_index:hover{
     transform: scale(1.1);
 }
-/* responsive index */
- @media screen and (max-width:320px){
-    #index_grid{
-        display: flex;
-        flex-direction: column;
-    }
- }
 /* diseño servicios */
-#servicios_grid{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr;
-   margin-left: 10%;
-   margin-right: 10%;
-}
-#servicios_grid .servicios{
-    text-align: center;
+.servicios{
     font-family: 'Arvo', serif;
     color: #02475E;
     border: 5px double #A2B38B;
     border-radius: 15%;
-    margin: 5% 25% 5% 25%;
     transition: all 1s;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
-#servicios_grid .servicios .img_servicios{
+.servicios .img_servicios{
     width: 100px;
     height: 100px;
 }
@@ -106,69 +78,42 @@ footer{
     transform: scale(1.1);
     background-color: #E6BA95;
 }
-/* responsive servicios */
-@media screen and (max-width:320px){
-    #servicios_grid{
-        display: flex;
-        flex-direction: column;
-    }
-}
 /* diseño galeria */
-#galery_grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-#galery_grid .image_galery_grid{
+.image_galery_grid{
     text-align: center;
     transition: all 1s;
 }
-#galery_grid .image_galery_grid .image_galery{
+.image_galery{
+    text-align: center;
     width: 450px;
     height: 250px;
     margin: 50px;
     border: 1px solid #5F7464;
+    transition: all 1s;
 }
-.image_galery_grid:hover{
+.image_galery:hover{
     transform: scale(1.1);
 }
-/* responsive galeria */
-@media screen and (max-width:320px){
-    #galery_grid{
-        display: flex;
-        flex-direction: column;
-    }
-    #galery_grid .image_galery_grid .image_galery{
-        width: 75%;
-        height: 75%;
-    }
-}
 /* diseño sobre nosotros */
-#about_us_grid{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 .about_us_text{
     animation-name: un_efecto;
     animation-duration: 2s;
     animation-iteration-count: 1;
     animation-delay: 1s;
+    color:#5F7464;
+    text-align: center;
+    font-family: 'Arvo', serif;
+    font-size: 18px;
+    padding: 20px;
 }
 @keyframes un_efecto {
     0%   {background-color: #FAFDD6;}
     50%  {background-color: #E6BA95;}
     100% {background-color: #FAFDD6;}
 }
-/* responsive sobre nosotros */
-@media screen and (max-width:320px){
-    #about_us_grid{
-        display: flex;
-        flex-direction: column;
-    }
-}
+
 /* diseño formulario de contacto */
-#formulario{
+/* #formulario{
     font-family: 'Arvo', serif;
     color: #02475E;
     padding: 10px;
@@ -181,16 +126,17 @@ footer{
 .input_form{
     display: inline-block;
     text-align: right;
+} */
+#form{
+    font-family: 'Arvo', serif;
+    color: #02475E;
+    padding: 10px;
+    width: 33%;
+    margin-left: 33%;
 }
-/* responsive formulario de contacto */
-@media screen and (max-width:320px){
-    #formulario{
-        display: flex;
-        flex-direction: column;
-        margin-left: 0%;
-    }
-    #formulario .elementos_formulario .text_area{
-        width: 250px;
-        height: 200px;
-    }
-    }
+.button_contact{
+    background-color: #E6BA95;
+}
+.form-control{
+    padding: 10px;
+}
