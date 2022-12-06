@@ -1,129 +1,137 @@
-body{
-    background-color: #FAFDD6;
+@charset "UTF-8";
+body {
+  background-color: #fafdd6;
 }
-h1{
-    color: #E6BA95;
-    text-align: center;
-    font-family: 'Calligraffitti', cursive;
-    font-size: 50px;
-    padding-top: 30px;
+
+h1 {
+  color: #E6BA95;
+  text-align: center;
+  font-family: "Calligraffitti", cursive;
+  font-size: 50px;
+  padding-top: 30px;
 }
+
 /* diseño del menu de inicio */
-nav{
-    background-color: #E6BA95;
+nav {
+  background-color: #E6BA95;
 }
-.nav-item a{
-    font-size: 20px;
-    font-family: 'Arvo', serif;
-    color: #5F7464;
-    text-decoration: none;
+nav a {
+  font-size: 20px;
+  font-family: "Arvo", serif;
+  color: #5F7464;
+  text-decoration: none;
 }
+
 /* diseño footer */
-footer{
-    background-color: #E0DDAA;
+footer {
+  background-color: #E0DDAA;
 }
-.logo_footer{
-    width: 75px;
-    height: 75px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+footer .texto_footer {
+  text-align: center;
+  color: #5F7464;
 }
-.texto_footer{
-    text-align: center;
-    color: #5F7464;
+footer .logo_footer {
+  width: 75px;
+  height: 75px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-.nav-item-footer{
-    font-size: 12px;
-    font-family: 'Arvo', serif;
-    color: #5F7464;
-    text-decoration: none;
-    display: inline;
+footer .nav-item-footer {
+  font-size: 12px;
+  font-family: "Arvo", serif;
+  color: #5F7464;
+  text-decoration: none;
+  display: inline;
 }
+
 /* diseño index*/
-.image_index{
-    width: 250px;
-    height: 250px;
-    text-align: center;
-    margin-bottom: 30px;
-    transition: all 1s;
+.texto_inicio {
+  color: #5F7464;
+  text-align: center;
+  font-family: "Arvo", serif;
+  font-size: 18px;
+  padding: 20px;
 }
-.texto_inicio{
-    color:#5F7464;
-    text-align: center;
-    font-family: 'Arvo', serif;
-    font-size: 18px;
-    padding: 20px;
+
+.image_index {
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  margin-bottom: 30px;
+  transition: all 1s;
 }
-.image_index:hover{
-    transform: scale(1.1);
+.image_index:hover {
+  transform: scale(1.1);
 }
+
 /* diseño servicios */
-.servicios{
-    font-family: 'Arvo', serif;
-    color: #02475E;
-    border: 5px double #A2B38B;
-    border-radius: 15%;
-    transition: all 1s;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
+.servicios {
+  font-family: "Arvo", serif;
+  color: #02475E;
+  border: 5px double #A2B38B;
+  border-radius: 15%;
+  transition: all 1s;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
-.servicios .img_servicios{
-    width: 100px;
-    height: 100px;
+.servicios:hover {
+  transform: scale(1.1);
+  background-color: #E6BA95;
 }
-.servicios:hover{
-    transform: scale(1.1);
-    background-color: #E6BA95;
+.servicios .img_servicios {
+  width: 100px;
+  height: 100px;
 }
 /* diseño galeria */
 .image_galery{
-    width: 290px;
-    height: 200px;
-    text-align: center;
-    margin: 10px;
-    border: 1px solid #5F7464;
-    transition: all 1s;
+  width: 290px;
+  height: 200px;
+  text-align: center;
+  margin: 10px;
+  border: 1px solid #5F7464;
+  transition: all 1s;
 }
 .image_galery:hover{
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 /* diseño sobre nosotros */
 .about_us_text{
-    animation-name: un_efecto;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-delay: 1s;
-    color:#5F7464;
-    text-align: center;
-    font-family: 'Arvo', serif;
-    font-size: 18px;
-    padding: 20px;
+  animation-name: un_efecto;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  color:#5F7464;
+  text-align: center;
+  font-family: 'Arvo', serif;
+  font-size: 18px;
+  padding: 20px;
 }
 @keyframes un_efecto {
-    0%   {background-color: #FAFDD6;}
-    50%  {background-color: #E6BA95;}
-    100% {background-color: #FAFDD6;}
+  0%   {background-color: #FAFDD6;}
+  50%  {background-color: #E6BA95;}
+  100% {background-color: #FAFDD6;}
 }
 /* diseño formulario de contacto */
 #form{
-    font-family: 'Arvo', serif;
-    color: #02475E;
-    padding: 10px;
-    width: 33%;
-    margin-left: 33%;
+  font-family: 'Arvo', serif;
+  color: #02475E;
+  padding: 10px;
+  width: 33%;
+  margin-left: 33%;
 }
 .button_contact{
-    background-color: #E6BA95;
+  background-color: #E6BA95;
 }
 .form-control{
-    padding: 10px;
+  padding: 10px;
 }
 @media screen and (max-width:900px){
-    #form{
-        margin-left: 0%;
-        width: 100%;
-    }
+  #form{
+      margin-left: 0%;
+      width: 100%;
+  }
 }
+/*# sourceMappingURL=style.css.map */

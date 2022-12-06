@@ -1,0 +1,82 @@
+@import "text_style";
+
+body{
+    background-color: #fafdd6;
+}
+h1{
+    color: $color_titulo;
+    text-align: center;
+    font-family: $font_titulo;
+    font-size: 50px;
+    padding-top: 30px;
+}
+/* diseño del menu de inicio */
+nav{
+    background-color: #E6BA95;
+    a{
+        font-size: 20px;
+        font-family: $font_texto;
+        color: $color_texto;
+        text-decoration: none;
+    }
+}
+/* diseño footer */
+footer{
+    background-color: #E0DDAA;
+        .texto_footer{
+            text-align: center;
+            color: $color_texto;
+         } 
+        .logo_footer{
+            width: 75px;
+            height: 75px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        } 
+        .nav-item-footer{
+            font-size: 12px;
+            font-family: $font_texto;
+            color: $color_texto;
+            text-decoration: none;
+            display: inline;
+        }
+}
+/* diseño index*/
+.texto_inicio{
+    color: $color_texto;
+    text-align: center;
+    font-family: $font_texto;
+    font-size: 18px;
+    padding: 20px;
+}
+.image_index{
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: all 1s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+/* diseño servicios */
+.servicios{
+    font-family: $font_texto;
+    color: $color_texto_servicios;
+    border: 5px double #A2B38B;
+    border-radius: 15%;
+    transition: all 1s;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    &:hover{
+        transform: scale(1.1);
+        background-color: #E6BA95;
+    }
+    .img_servicios{
+        width: 100px;
+        height: 100px;
+    }
+}
