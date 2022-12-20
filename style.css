@@ -46,7 +46,7 @@ footer .nav-item-footer {
 }
 
 /* diseño index*/
-.texto_inicio {
+.texto_inicio, .about_us_text {
   color: #5F7464;
   text-align: center;
   font-family: "Arvo", serif;
@@ -63,6 +63,11 @@ footer .nav-item-footer {
 }
 .image_index:hover {
   transform: scale(1.1);
+}
+
+/*Map Index*/
+texto_inicio {
+  font-size: 18px;
 }
 
 /* diseño servicios */
@@ -97,7 +102,7 @@ footer .nav-item-footer {
 .image_galery:hover{
   transform: scale(1.1);
 }
-/* diseño sobre nosotros */
+/* diseño sobre nosotros*/
 .about_us_text{
   animation-name: un_efecto;
   animation-duration: 2s;

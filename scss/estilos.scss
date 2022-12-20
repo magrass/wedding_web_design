@@ -60,12 +60,25 @@ footer{
         transform: scale(1.1);
     }
 }
+/*Map Index*/
+$estilos-index: (
+    align: center,
+    color: $color_texto,
+    font-size1: 18px,
+    font-size2: 22px,
+);
+texto_inicio{
+   font-size: map-get($map: $estilos-index, $key: font-size1);
+}
 /* diseño servicios */
+@mixin bordes(){
+    border: 5px double #A2B38B;
+    border-radius: 15%;
+}
 .servicios{
     font-family: $font_texto;
     color: $color_texto_servicios;
-    border: 5px double #A2B38B;
-    border-radius: 15%;
+    @include bordes();
     transition: all 1s;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -79,4 +92,8 @@ footer{
         width: 100px;
         height: 100px;
     }
+}
+/* diseño sobre nosotros*/
+.about_us_text{
+    @extend .texto_inicio
 }
