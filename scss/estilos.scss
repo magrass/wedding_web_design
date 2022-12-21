@@ -97,3 +97,46 @@ texto_inicio{
 .about_us_text{
     @extend .texto_inicio
 }
+.about_us_text{
+    animation-name:un_efecto;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+}
+@keyframes un_efecto {
+    0%   {background-color: #FAFDD6;}
+    50%  {background-color: #E6BA95;}
+    100% {background-color: #FAFDD6;}
+}
+/* Diseño Galería */
+.image_galery{
+    width: 290px;
+    height: 200px;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid #5F7464;
+    transition: all 1s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+/* diseño formulario de contacto*/
+#form{
+    font-family: $font_texto;
+    color: $color_texto_servicios;
+    padding: 10px;
+    width: 33%;
+    margin-left: 33%;
+}
+.button_contact{
+    background-color: $color_titulo;
+}
+.form-control{
+    padding: 10px;
+}
+@media screen and (max-width:900px){
+    #form{
+        margin-left: 0%;
+        width: 100%;
+    }
+}

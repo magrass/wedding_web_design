@@ -90,8 +90,28 @@ texto_inicio {
   width: 100px;
   height: 100px;
 }
-/* diseño galeria */
-.image_galery{
+
+/* diseño sobre nosotros*/
+.about_us_text {
+  animation-name: un_efecto;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+
+@keyframes un_efecto {
+  0% {
+    background-color: #FAFDD6;
+  }
+  50% {
+    background-color: #E6BA95;
+  }
+  100% {
+    background-color: #FAFDD6;
+  }
+}
+/* Diseño Galería */
+.image_galery {
   width: 290px;
   height: 200px;
   text-align: center;
@@ -99,44 +119,32 @@ texto_inicio {
   border: 1px solid #5F7464;
   transition: all 1s;
 }
-.image_galery:hover{
+.image_galery:hover {
   transform: scale(1.1);
 }
-/* diseño sobre nosotros*/
-.about_us_text{
-  animation-name: un_efecto;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-delay: 1s;
-  color:#5F7464;
-  text-align: center;
-  font-family: 'Arvo', serif;
-  font-size: 18px;
-  padding: 20px;
-}
-@keyframes un_efecto {
-  0%   {background-color: #FAFDD6;}
-  50%  {background-color: #E6BA95;}
-  100% {background-color: #FAFDD6;}
-}
-/* diseño formulario de contacto */
-#form{
-  font-family: 'Arvo', serif;
+
+/* diseño formulario de contacto*/
+#form {
+  font-family: "Arvo", serif;
   color: #02475E;
   padding: 10px;
   width: 33%;
   margin-left: 33%;
 }
-.button_contact{
+
+.button_contact {
   background-color: #E6BA95;
 }
-.form-control{
+
+.form-control {
   padding: 10px;
 }
-@media screen and (max-width:900px){
-  #form{
-      margin-left: 0%;
-      width: 100%;
+
+@media screen and (max-width: 900px) {
+  #form {
+    margin-left: 0%;
+    width: 100%;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
